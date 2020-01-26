@@ -39,5 +39,8 @@ request.post(options, (error, response, body) => {
     }
     let jsonResponse = JSON.stringify(JSON.parse(body), null, '  ');
     console.log('JSON Response\n');
-    console.log(JSON.parse(jsonResponse)[0].faceAttributes.gender);
+    // console.log(JSON.parse(jsonResponse)[0].faceAttributes.gender);
+    console.log(JSON.parse(jsonResponse));
 });
+
+console.log("finished doing job")
