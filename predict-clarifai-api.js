@@ -3,7 +3,7 @@ const fs = require('fs')
 
 const sourceFile = require('./sourceFile.json');
 const app = new Clarifai.App({
-    apiKey: '67ed35e690244348b66e2a7548271910'
+    apiKey: 'cc7615603a6e476a8afc2c76350fce27'
 });
 
 const withGender = []
@@ -40,10 +40,10 @@ let counter = 0;
 
                     // updateJson(person, gender)
 
-                    // console.log(err);
+                    console.log(err);
                 }
             ).catch((err) => {
-                // console.log('error has been occured', err)
+                console.log('error has been occured', err)
                 gender = 'female'
                 withGender.push({
                     ...person,
